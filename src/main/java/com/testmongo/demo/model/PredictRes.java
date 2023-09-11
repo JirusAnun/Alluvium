@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 import java.util.ArrayList;
 
 @Data
-public class PredictRes {
+public class PredictRes implements Comparable<PredictRes>{
     double score;
     double[] advantage;
     String topLeft;
@@ -20,4 +20,10 @@ public class PredictRes {
         this.nearLocations = nearLocations;
     }
 
+    @Override
+    public int compareTo(PredictRes other) {
+        if (this.score > other.score) return -1;
+        else if (this.score < other.score) return 1;
+        return 0;
+    }
 }

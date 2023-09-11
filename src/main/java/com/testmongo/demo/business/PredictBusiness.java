@@ -23,7 +23,7 @@ public class PredictBusiness {
         String[] requestList = {"hospital", "police", "school", "university", "bank", "gas", "fitness", "market_mall", "pharmacy", "restaurant", "park"};
 
         for (int i = 0; i < 11; ++i) {
-            ArrayList<Location> location = new ArrayList<>();
+            ArrayList<Location> location;
             location = predictService.setStructure(topLeft, btmRight, 100, requestList[i], i);
             locations.add(location);
         }
