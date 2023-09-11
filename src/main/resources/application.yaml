@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://sleepyteam3233:QagUhOd8uW8jni0o@cluster0.avx7kmi.mongodb.net/userdata
+      database: userdata
+---
+app:
+  token:
+    secret: A11uv1um
+    issuer: BackendService
