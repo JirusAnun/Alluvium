@@ -36,7 +36,7 @@ public class SecurityConfig {
                     CorsConfiguration cors = new CorsConfiguration();
                     cors.setAllowCredentials(true);
                     cors.setAllowedOriginPatterns(Collections.singletonList("https://*"));
-                    cors.setAllowedOriginPatterns(Collections.singletonList("http://*"));
+//                    cors.setAllowedOriginPatterns(Collections.singletonList("http://*"));
                     cors.addAllowedHeader("*");
                     cors.addAllowedMethod("GET");
                     cors.addAllowedMethod("POST");
